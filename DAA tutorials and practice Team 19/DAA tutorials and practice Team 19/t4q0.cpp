@@ -34,6 +34,20 @@ void check_symmetric(vector<vector<int>>&v,int m,int n){
     else
     cout<<"Symmetric"<<endl;
 }
+bool check_transitive(vector<vector<int>>&v,int n){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            if(v[i][j]==1){
+                for(int k=1;k<=n;k++){
+                    if(v[j][k]!=1){
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+    return true;
+}
 int main()
 {
     int n,m,flag=0;
