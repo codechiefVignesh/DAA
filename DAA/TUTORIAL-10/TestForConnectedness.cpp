@@ -3,9 +3,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#include<bits/stdc++.h>
-using namespace std;
-
 //DFS implementation to check the nodes not visited which will tell us about the connectivity of the graph
 void dfs(int a[100][100],int visited[100],int s,int n)
 {
